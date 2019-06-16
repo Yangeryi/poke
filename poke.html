@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扑克牌</title>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="poke.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main{
+            width: 800px;
+            height: 600px;
+            background: #d5aedb;
+            margin: 0 auto;
+            position: relative;
+        }
+        .poke{
+            width: 90px;
+            height: 120px;
+            background: palegreen;
+            position: absolute;
+            background-size: cover;
+            left: 350px;
+            top: 0;
+            opacity: 0;
+            border: 2px solid #d372dd;
+        }
+        .leftBtn {
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            left: 300px;
+            background: #FFFFFF;
+            outline: none;
+        }
+        .rightBtn{
+            width: 60px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            left: 370px;
+            background: #FFFFFF;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" >
+        <div class="poke"></div>
+
+        <input class="leftBtn" type="button" value="<">
+        <input class="rightBtn" type="button" value=">">
+    </div>
+
+</body>
+</html>
